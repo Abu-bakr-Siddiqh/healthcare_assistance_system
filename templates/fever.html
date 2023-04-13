@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fever Medicine Information</title>
+
+    <style>
+        label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 32px;
+      width: 680px;
+      text-align: right;
+
+    }
+
+
+
+    .buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+h1{
+text-align: center;
+}
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1165272654/photo/sister-touching-her-brothers-forehead-checking-temperature-and-holding-glass-of-water.jpg?s=612x612&w=0&k=20&c=xDY9qfWwQnZvajg9L0yag6vlBclTg1fL5DSCIIkaxpk=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+    </style>
+</head>
+   <body>
+      <div>
+          <form action="/fever_result" method="POST">
+              <br><br><br><br>
+              <h1 style="text-align:center color:black;">Enter your Age and Check the Medicine Information For Fever</h1>
+              <br><br>
+          <label for="Age">Age</label>
+          <input type="text" id="Age" name="Age">
+
+
+
+          <br>
+          <br>
+              <br><br><br>
+         <div class="buttons">
+        <button class="btn-hover color-1">SUBMIT</button>
+         </div>
+
+              <br><br>
+              <h1 style="color:red;">POINTS TO REMEMBER</h1>
+    <h2>1. A fever is a common sign of illness, but that's not necessarily a bad thing.</h2>
+        <h2>2. In fact, fevers seem to play a key role in fighting infections.</h2>
+            <h2>3. So should you treat a fever or let the fever run its course? Here's help making the call.</h2>
+    <h2>4. These recommendations are for people who are generally healthy — for instance, those who are not immunocompromised or taking chemotherapy drugs and haven't recently had surgery.</h2>
+              <h2>5. The values listed in the table below are for temperatures taken with rectal and oral thermometers.</h2>
+              <h2>6.These thermometers provide the most accurate measurement of core body temperature.</h2>
+            <h2>7.Other types of thermometers, such as ear (tympanic membrane) or forehead (temporal artery) thermometers, although convenient, provide less accurate temperature measurements.</h2>
+    <br>
+          </form>
+      </div>
+   </body>
+</html>

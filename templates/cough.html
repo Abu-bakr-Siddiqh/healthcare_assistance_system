@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cough Medicine Information</title>
+
+     <style>
+        label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 32px;
+      width: 680px;
+      text-align: right;
+
+    }
+
+
+
+    .buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+h1{
+text-align: center;
+}
+
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1208821002/vector/personal-hygiene-cover-mouth-while-sneezing-icon.jpg?s=612x612&w=0&k=20&c=TUZiLVPDggnsiC5z9Se7K8YCIPUrlLKSqH45_NNnrqk=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+    </style>
+</head>
+   <body>
+      <div>
+          <form action="/cough_result" method="POST">
+              <br><br><br><br>
+              <h1 style="text-align:center;">Enter your Age and Check the Medicine Information For Cough</h1>
+              <br><br>
+          <label for="Age">Age</label>
+          <input type="text" id="Age" name="Age">
+
+
+
+          <br>
+          <br>
+              <br><br>
+         <div class="buttons">
+        <button class="btn-hover color-1">SUBMIT</button>
+         </div>
+              <br><br>
+
+              <h1 style="color: red;">POINTS TO REMEMBER</h1>
+              <h2>Here are some points to remember about cough:</h2>
+    <h2>1. Cough is a reflex action that helps to clear the throat and airways of mucus, irritants, and foreign particles.</h2>
+    <h2>2. It can be caused by a variety of factors, including viral infections, allergies, smoking, air pollution, and respiratory diseases like asthma and COPD.</h2>
+    <h2>3. Cough can be acute (lasting less than three weeks) or chronic (lasting more than eight weeks).</h2>
+    <h2>4. Acute cough is usually self-limiting and does not require medical intervention, but chronic cough may require evaluation by a healthcare provider to determine the underlying cause.</h2>
+    <h2>5. The quality of cough can provide clues about its cause. For example, a dry, hacking cough may indicate a viral infection, while a wet, productive cough may indicate a bacterial infection.</h2>
+    <h2>6. Treatment for cough depends on its underlying cause. For example, cough caused by a bacterial infection may require antibiotics, while cough caused by asthma may require bronchodilators and anti-inflammatory medications.</h2>
+    <h2>7. Home remedies, such as drinking plenty of fluids, using a humidifier, and avoiding irritants like smoke and dust, can also help to relieve cough.</h2>
+    <h2>8. In some cases, cough may be a symptom of a more serious underlying condition, such as lung cancer. If cough persists or is accompanied by other symptoms like chest pain, difficulty breathing, or coughing up blood, it is important to seek medical attention.</h2>
+
+
+
+          </form>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Allergies Medicine Information</title>
+
+    <style>
+        label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 32px;
+      width: 680px;
+      text-align: right;
+
+    }
+    .buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+h1{
+text-align: center;
+}
+
+ p{
+   font-size: 20px;
+        }
+
+
+                body{
+   background-image: url('https://media.istockphoto.com/id/169952304/photo/skin-allergy.jpg?b=1&s=612x612&w=0&k=20&c=tkMUkZPdL1La5fl6bfwBFHzA8unisNJlQ8_O4owg6mA=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+    </style>
+</head>
+   <body>
+      <div>
+          <br><br>
+             <form action="/allergy_result" method="POST">
+              <br><br><br><br>
+              <h1 style="text-align:center;">Enter your Age and Check the Medicine Information For Allergy</h1>
+              <br><br>
+          <label for="Age">Age</label>
+          <input type="text" id="Age" name="Age">
+          <br>
+          <br>
+              <br><br>
+         <div class="buttons">
+        <button class="btn-hover color-1">SUBMIT</button>
+         </div>
+              <br><br>
+
+              <h1 style="color:red;">POINTS TO REMEMBER</h1>
+              <h2>It's important to note that you should always talk to a doctor or pharmacist before starting any new medication, especially if you have any underlying health conditions or are taking other medications.</h2>
+              <h2>There are many different types of allergy medications available, and the appropriate medication and dosage will depend on the individual's age and specific allergy symptoms. </h2>
+          </form>
+      </div>
+   </body>
+</html>

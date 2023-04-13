@@ -1,0 +1,176 @@
+<html>
+<head>
+  <style>
+    h1{
+       text-align: center;
+       color: black;
+       }
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 24px;
+      width: 450px;
+      text-align: right;
+      color: black;
+
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+   background-image: url('https://images.pexels.com/photos/6942082/pexels-photo-6942082.jpeg?auto=compress&cs=tinysrgb&w=600');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
+  </style>
+</head>
+<body class="bg-nav">
+<div>
+  <br><br><br><br>
+    <h1>DIABETES DISEASE PREDICTION</h1>
+    <br><br><br>
+
+    <h2>1. Pregnancies: Number of times the patient has been pregnant. </h2><br>
+    <h2>2. Glucose: Plasma glucose concentration over 2 hours in an oral glucose tolerance test.</h2><br>
+    <h2>3. Blood Pressure: Diastolic blood pressure (mm Hg).</h2><br>
+    <h2>4. Skin Thickness: Triceps skin fold thickness (mm).</h2><br>
+    <h2>5. Insulin: 2-Hour serum insulin (mu U/ml).</h2><br>
+    <h2>6. BMI: Body mass index, which is a measure of body fat based on height and weight (kg/m²).</h2><br>
+    <h2>7. Diabetes Pedigree Function: A function that measures the likelihood of diabetes based on family history.</h2><br>
+    <h2>8. Age: The age of the patient in years.</h2><br>
+
+  <br><br><br><br>
+</div>
+<br>
+<br>
+<div>
+  <form action="/diabetes_result" method="POST">
+    <label for="Pregnancies">Pregnancies</label>
+      <select id="Pregnancies" name="Pregnancies">
+      <option value="0">0 pregnancie</option>
+      <option value="1">1 pregnancie</option>
+      <option value="2">2 pregnancies</option>
+      <option value="3">3 pregnancies</option>
+      <option value="4">4 pregnancies</option>
+      <option value="5">5 pregnancies</option>
+      <option value="6">6 pregnancies</option>
+      <option value="7">7 pregnancies</option>
+      <option value="8">8 pregnancies</option>
+      <option value="9">9 pregnancies</option>
+      <option value="10">10 pregnancies</option>
+      <option value="11">11 pregnancies</option>
+      <option value="12">12 pregnancies</option>
+      <option value="13">13 pregnancies</option>
+      <option value="14">14 pregnancies</option>
+      <option value="15">15 pregnancies</option>
+    </select>
+
+    <br>
+    <label for="Glucose">Glucose Level</label>
+    <input type="text" id="Glucose" name="Glucose">btw:[0-200]
+
+    <br>
+    <label for="Blood Pressure">Blood Pressure</label>
+    <input type="text" id="Blood Pressure" name="Blood Pressure">btw:[0-125]
+
+    <br>
+    <label for="SkinThickness">Skin Thickness</label>
+    <input type="text" id="SkinThickness" name="SkinThickness">btw:[0-100]
+
+    <br>
+    <label for="Insulin">Insulin</label>
+    <input type="text" id="Insulin" name="Insulin">btw:[0-999]
+
+    <br>
+    <label for="BMI">BMI</label>
+    <input type="text" id="BMI" name="BMI">btw:[0.00-70.00]
+
+    <br>
+    <label for="DiabetesPedigreeFunction">Diabetes Pedigree Function</label>
+    <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction">btw:[0.05-2.50]
+
+    <br>
+    <label for="Age">Age</label>
+    <input type="text" id="Age" name="Age">btw:[18-99]
+
+    <br><br><br><br><br>
+    <div class="buttons">
+    <button class="btn-hover color-1">PREDICT</button>
+      </div>
+  </form>
+</div>
+<br><br><br>
+<h1 style="color:black"> {{ prediction_diabetes }}</h1>
+<br><br><br>
+<h1 style="color:red">NOTE......!</h1>
+    <h1>This prediction is commonly used to predict the likelihood of a female patient having diabetes based on their medical data.</h1>
+
+<br><br><br><br>
+</body>
+</html>

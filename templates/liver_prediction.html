@@ -1,0 +1,176 @@
+<html>
+<head>
+  <style>
+    h1{
+       text-align: center;
+       color: black;
+       }
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 24px;
+      width: 450px;
+      text-align: right;
+      color: black;
+
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+   background-image: url('https://media.istockphoto.com/id/899731774/photo/doctor-shows-liver-in-hand.jpg?b=1&s=170667a&w=0&k=20&c=0LVCIgkl_znmz9LjDz7dcvRFtwyBXMdsr5DGvUJAso8=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+  </style>
+
+</head>
+<body class="bg-nav">
+    <br><br><br><br>
+    <h1>LIVER DISEASE PREDICTION</h1>
+    <br>
+    <br><br>
+    <h2>1. Age: The age of the patient in years.</h2><br>
+    <h2>2. Gender: The gender of the patient (1 = male; 2 = female).</h2><br>
+    <h2>3. Total Bilirubin: The total amount of bilirubin in the patient's blood (in mg/dL).</h2><br>
+    <h2>4. Direct Bilirubin: The amount of direct bilirubin in the patient's blood (in mg/dL).</h2><br>
+    <h2>5. Alkaline Phosphatase: The amount of alkaline phosphatase in the patient's blood (in IU/L).</h2><br>
+    <h2>6. Alamine Aminotransferase (ALT): The amount of ALT in the patient's blood (in IU/L).</h2><br>
+    <h2>7. Aspartate Aminotransferase (AST): The amount of AST in the patient's blood (in IU/L).</h2><br>
+    <h2>8. Total Proteins: The total amount of protein in the patient's blood (in g/dL).</h2><br>
+    <h2>9. Albumin: The amount of albumin in the patient's blood (in g/dL).</h2><br>
+    <h2>10. Albumin and Globulin Ratio: The ratio of albumin to globulin in the patient's blood.</h2><br>
+
+    <br>
+    <br><br><br><br>
+<div>
+  <form action="/liver_result" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+
+    <br>
+    <label for="Gender">Gender</label>
+    <select id="Gender" name="Gender">
+      <option value="0">Male</option>
+      <option value="1">FeMale</option>
+    </select>
+    <br>
+
+    <label for="Total_Bilirubin">Total_Bilirubin</label>
+    <input type="text" id="Total_bilirubin" name="Total_Bilirubin">btw[0.0 - 80.0]
+
+    <br>
+
+    <label for="Direct_Bilirubin">Direct_Bilirubin</label>
+    <input type="text" id="Direct_Bilirubin" name="Direct_Bilirubin">btw[0.0 - 15.0]
+
+    <br>
+
+    <label for="Alkaline_Phosphotase">Alkaline_Phosphotase</label>
+    <input type="text" id="Alkaline_Phosphotase" name="Alkaline_Phosphotase">btw[50 - 2200]
+
+    <br>
+
+    <label for="Alamine_Aminotransferase">Alamine_Aminotransferase</label>
+    <input type="text" id="Alamine_Aminotransferase" name="Alamine_Aminotransferase">btw[0 - 2000]
+
+    <br>
+
+    <label for="Aspartate_Aminotransferase">Aspartate_Aminotransferase</label>
+    <input type="text" id="Aspartate_Aminotransferase" name="Aspartate_Aminotransferase">btw[0 - 5000]
+
+    <br>
+
+    <label for="Total_Protiens">Total_Protiens</label>
+    <input type="text" id="Total_Protiens" name="Total_Protiens">btw[2.0 - 10.0]
+
+    <br>
+
+    <label for="Albumin">Albumin</label>
+    <input type="text" id="Albumin" name="Albumin">btw[0.5 - 7.0]
+
+    <br>
+
+    <label for="Albumin_and_Globulin_Ratio">Albumin_and_Globulin_Ratio</label>
+    <input type="text" id="Albumin_and_Globulin_Ratio" name="Albumin_and_Globulin_Ratio">btw[0.0 - 2.5]
+
+    <br>
+
+      <br><br><br><br>
+    <div class="buttons">
+    <button class="btn-hover color-1">PREDICT</button>
+      </div>
+  </form>
+</div>
+<br><br><br>
+<h1 style="color:black"> {{ prediction_liver }}</h1>
+<br><br>
+<h1>NOTE.....!</h1>
+<h1>This Prediction is commonly used to predict the likelihood of a patient having liver disease based on their medical data.</h1>
+<br><br><br><br>
+</body>
+</html>

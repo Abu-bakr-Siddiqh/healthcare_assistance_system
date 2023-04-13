@@ -1,0 +1,194 @@
+<html>
+<head>
+  <style>
+    h1{
+       text-align: center;
+       color: black;
+       }
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 24px;
+      width: 450px;
+      text-align: right;
+      color: black;
+
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1326419145/photo/woman-holding-pink-breast-cancer-ribbon.jpg?b=1&s=170667a&w=0&k=20&c=N5xykscDd8fdIcfBf63n8cUk9EJFteROYdODeJ5oopU=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+
+
+  </style>
+</head>
+<body class="bg-nav">
+    <br><br><br><br>
+    <h1>BREAST CANCER DISEASE PREDICTION</h1>
+    <br>
+    <br>
+
+    <h2>1."Radius_Mean" is the average distance from the center of the nucleus to the perimeter of cancer cell clusters.</h2><br>
+    <h2>2."Perimeter_Mean" refers to the average length of the boundary of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>3."Area_Mean" refers to the average size of the area occupied by cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>4."Compactness_Mean" refers to the ratio of the perimeter squared to the area of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>5."Concavity_Mean" refers to the average severity of concave portions of the cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>6."Concave_points_Mean" refers to the average number of concave portions of the cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>7."Radius_se" refers to the standard error of distances from the center to points on the perimeter of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>8."Perimeter_se" refers to the standard error of the length of the boundary of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>9."Area_se" refers to the standard error of the size of the area occupied by cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>10."Radius_Worst" refers to the largest distance from the center of the nucleus to the perimeter of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>11."Perimeter_Worst" refers to the largest length of the boundary of cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>12."Area_Worst" refers to the largest size of the area occupied by cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>13."Compactness_Worst" refers to the ratio of the perimeter squared to the area of the largest cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>14."Concavity_Worst" refers to the largest severity of concave portions of the cancer cell clusters in a sample of breast tissue.</h2><br>
+    <h2>15."Concave_points_Worst" refers to the largest number of concave portions of the cancer cell clusters in a sample of breast tissue.</h2><br>
+
+
+    <br>
+    <br><br><br><br>
+<div>
+  <form action="/breast_cancer_result" method="POST">
+    <label for="radius_mean">Radius_Mean</label>
+    <input type="text" id="radius_mean" name="radius_mean">btw[6.00 - 30.00]
+
+    <br>
+    <label for="perimeter_mean">Perimeter_Mean</label>
+    <input type="text" id="perimeter_mean" name="Perimeter_mean">btw[43.00 - 200.00]
+
+    <br>
+    <label for="area_mean">Area_Mean</label>
+    <input type="text" id="area_mean" name="area_mean">btw[140.00 - 2500.00]
+
+    <br>
+    <label for="compactness_mean">Compactness_Mean</label>
+    <input type="text" id="compactness_mean" name="compactness_mean">btw[0.00 - 0.50]
+
+    <br>
+    <label for="concavity_mean">Concavity_Mean</label>
+    <input type="text" id="concavity_mean" name="concavity_mean">btw[0.00 - 0.50]
+
+    <br>
+    <label for="concave points_mean">Concave_points_Mean</label>
+    <input type="text" id="concave points_mean" name="concave points_mean">btw[0.00 - 0.50]
+
+    <br>
+    <label for="radius_se">Radius_se</label>
+    <input type="text" id="radius_se" name="radius_se">btw[0.00 - 3.00]
+
+    <br>
+    <label for="perimeter_se">Perimeter_se</label>
+    <input type="text" id="perimeter_se" name="perimeter_se">btw[0.50 - 25.00]
+
+    <br>
+    <label for="area_se">Area_se</label>
+    <input type="text" id="area_se" name="area_se">btw[6.50 - 550.00]
+
+    <br>
+    <label for="radius_worst">Radius_Worst</label>
+    <input type="text" id="radius_worst" name="radius_worst">btw[7.00 - 40.00]
+
+    <br>
+    <label for="perimeter_worst">Perimeter_Worst</label>
+    <input type="text" id="perimeter_worst" name="perimeter_worst">btw[50.00 - 260.00]
+
+    <br>
+    <label for="area_worst">Area_Worst</label>
+    <input type="text" id="area_worst" name="area_worst">btw[180.00 - 4500.00]
+
+    <br>
+    <label for="compactness_worst">Compactness_Worst</label>
+    <input type="text" id="compactness_worst" name="compactness_worst">btw[0.00 - 1.50]
+
+    <br>
+    <label for="concavity_worst">Concavity_Worst</label>
+    <input type="text" id="concavity_worst" name="concavity_worst">btw[0.00 - 2.00]
+
+    <br>
+    <label for="concave points_worst">Concave_points_Worst</label>
+    <input type="text" id="concave points_worst" name="concave points_worst">btw[0.00 - 1.00]
+
+    <br>
+      <br><br><br><br>
+    <div class="buttons">
+    <button class="btn-hover color-1">PREDICT</button>
+      </div>
+  </form>
+</div>
+<br><br><br>
+<h1 style="color:black"> {{ prediction_breast_cancer }}</h1>
+<br><br><br>
+<h1 Style="color:red">NOTE.....!</h1>
+<h1>Breast cancer prediction is used to identify whether a patient is likely to have malignant or benign breast tumors, and to help guide clinical decision-making for appropriate medical treatment.</h1><br>
+<h1>Breast cancer can occur in both females and males, although it is more common in females.</h1>
+<br><br><br><br>
+</body>
+</html>

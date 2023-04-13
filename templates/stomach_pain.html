@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stomach Pain Medicine Information</title>
+    <style>
+        label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 32px;
+      width: 680px;
+      text-align: right;
+
+    }
+
+
+
+    .buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+h1{
+text-align: center;
+}
+
+ p{
+   font-size: 20px;
+        }
+
+body{
+   background: url('https://images.pexels.com/photos/5712686/pexels-photo-5712686.jpeg?auto=compress&cs=tinysrgb&w=600');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+    </style>
+</head>
+   <body>
+      <div>
+          <form action="/stomach_pain_result" method="POST">
+              <br><br><br><br>
+              <h1 style="text-align:center;">Enter your Age and Check the Medicine Information For Stomach Pain</h1>
+              <br><br>
+          <label for="Age">Age</label>
+          <input type="text" id="Age" name="Age">
+
+
+
+          <br>
+          <br>
+              <br><br>
+         <div class="buttons">
+        <button class="btn-hover color-1">SUBMIT</button>
+         </div>
+             <br><br>
+
+              <h1 style="color:red;">POINTS TO REMEMBER</h1>
+              <h2>1.Here are some points to remember about cough:</h2>
+              <h2>2.There are various medications available for the treatment of stomach pain, but the selection of medication can vary depending on the age of the patient.</h2>
+              <h2>3.It is important to note that these medications should only be used as directed and under the guidance of a healthcare provider. </h2>
+               <h2>4.Dosage and frequency of medication can vary based on age, weight, and other health factors.</h2>
+<br><br><br>
+
+          </form>
+      </div>
+   </body>
+</html>

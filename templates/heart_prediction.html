@@ -1,0 +1,222 @@
+<html>
+<head>
+  <style>
+    h1{
+       text-align: center;
+       color: black;
+       font-size: 45px;
+       }
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 24px;
+      width: 450px;
+      text-align: right;
+      color: black;
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+background: url('https://media.istockphoto.com/id/1412647653/photo/human-heart-with-blood-vessels-cardio-puls-line-3d-illustration.jpg?b=1&s=612x612&w=0&k=20&c=Jsnp2mcsWGxTr3sqhhdjB6dcUUfDxfPbiQAXvPfa_-g=');
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+  </style>
+</head>
+
+<body>
+<div>
+    <br><br><br>
+    <h1>HEART DISEASE PREDICTION</h1>
+  <br>
+  <br>
+  <h2>1. Age: The age of the patient in years.</h2><br>
+  <h2>2. Sex: The gender of the patient (1 = male; 0 = female).</h2><br>
+  <h2>3. Chest Pain Type (cp): The type of chest pain experienced by the patient. It can take one of four values:<br>
+      Value 1: typical angina<br>
+      Value 2: atypical angina<br>
+      Value 3: non-anginal pain<br>
+      Value 4: asymptomatic</h2><br>
+  <h2>4. Resting Blood Pressure (trestbps): The resting blood pressure of the patient (in mm Hg).</h2><br>
+  <h2>5. Serum Cholesterol (chol): The serum cholesterol level of the patient (in mg/dl).</h2><br>
+  <h2>6. Fasting Blood Sugar (fbs): Whether or not the patient's fasting blood sugar is greater than 120 mg/dl (1 = true; 0 = false).</h2><br>
+  <h2>7. Resting Electrocardiographic Results (restecg): The results of the resting electrocardiogram, which can take one of three values:<br>
+Value 0: normal<br>
+ Value 1: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)</h2><br>
+  <h2>8. Maximum Heart Rate Achieved (thalach): The maximum heart rate achieved during the exercise test.</h2><br>
+  <h2>9. Exercise Induced Angina (exang): Whether or not the patient experienced exercise-induced angina (1 = yes; 0 = no).</h2><br>
+  <h2>10. Oldpeak: ST depression induced by exercise relative to rest.</h2><br>
+  <h2>11. Slope: The slope of the peak exercise ST segment, which can take one of three values:<br>
+Value 1: upsloping<br>
+Value 2: flat<br>
+Value 3: downsloping</h2><br>
+  <h2>12. Number of Major Vessels (ca): The number of major vessels (0-3) colored by fluoroscopy.</h2><br>
+  <h2>13. Thalassemia (thal): A blood disorder called thalassemia, which can take one of three values:<br>
+Value 1: normal<br>
+Value 2: fixed defect<br>
+Value 3: reversible defect</h2><br>
+</div>
+<br>
+<br><br><br><br>
+
+  <form action="/heart_result" method="POST">
+    <label for="age" >Age</label>
+    <input type="text" id="age" name="age">
+
+    <br>
+    <label for="Sex">Sex</label>
+    <select id="Sex" name="Sex">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+
+    <br>
+    <label for="chest pain">chest pain</label>
+    <select id="chest pain" name="chest pain">
+      <option value="0">typical angina</option>
+      <option value="1">atypical angina</option>
+      <option value="2">non-anginal pain</option>
+      <option value="3">asymptomatic</option>
+    </select>
+
+    <br>
+    <label for="trestbps">Resting Blood Pressure</label>
+    <input type="text" id="trestbps" name="trestbps">btw:[90-200]
+
+    <br>
+    <label for="cholestoral">Serum Cholestoral</label>
+    <input type="text" id="cholestoral" name="cholestoral">btw:[120-570]
+
+    <br>
+    <label for="fasting_blood_sugar">fasting_blood_sugar</label>
+    <select id="fasting_blood_sugar" name="fasting_blood_sugar">
+      <option value="0">False</option>
+      <option value="1">True</option>
+    </select>
+
+    <br>
+    <label for="restecg">Resting Electrocardiographic Results </label>
+    <select id="restecg" name="restecg">
+      <option value="0">Normal</option>
+      <option value="1">ST-T Wave Abnormality</option>
+      <option value="2">Left Ventricular Hypertrophy</option>
+    </select>
+
+    <br>
+    <label for="thalach">Maximum Heart Rate Achieved</label>
+      <input type="text" id="thalach" name="thalach">btw:[70-210]
+
+    <br>
+    <label for="exang">Exercise Induced Angina</label>
+    <select id="exang" name="exang">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </select>
+
+    <br>
+    <label for="oldpeak">Oldpeak</label>
+    <input type="text" id="oldpeak" name="oldpeak">btw:[0.00-6.50]
+
+    <br>
+    <label for="slope">Slope</label>
+    <select id="slope" name="slope">
+      <option value="0">Upsloping</option>
+      <option value="1">Flat</option>
+      <option value="2">Downsloping</option>
+    </select>
+
+    <br>
+    <label for="ca">Number Of Major Vessels</label>
+    <select id="ca" name="ca">
+      <option value="0">0 Major Vessels</option>
+      <option value="1">1 Major Vessels</option>
+      <option value="2">2 Major Vessels</option>
+      <option value="3">3 Major Vessels</option>
+    </select>
+
+    <br>
+      <label for="thal">Thalassemia</label>
+    <select id="thal" name="thal">
+      <option value="0">Normal</option>
+      <option value="1">Fixed Defect</option>
+      <option value="2">Reversable Defect</option>
+    </select>
+
+      <br><br><br>
+      <div class="buttons">
+    <button class="btn-hover color-1">PREDICT</button>
+      </div>
+  </form>
+
+
+   <h1 style="color:black"> {{ prediction_heart }}</h1>
+<br><br>
+<h1 style="color:red">NOTE.....!</h1>
+<h1>This Prediction is commonly used to predict the likelihood of a patient having heart disease based on their medical data.</h1>
+<br><br><br><br>
+</body>
+</html>

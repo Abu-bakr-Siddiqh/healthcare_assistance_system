@@ -1,0 +1,345 @@
+<html>
+<head>
+  <style>
+    h1{
+       text-align: center;
+       }
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 24px;
+      width: 450px;
+      text-align: right;
+      color: black;
+
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 10px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1333532279/photo/medical-illustration-showing-lung-cancer-or-bronchial-carcinoma-3d-illustration.jpg?b=1&s=170667a&w=0&k=20&c=ilg__FYbcqNVdK8aUrr8d-5xUl1oe3dCNpH8Ht13Mig=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+h2{
+color: black ;
+}
+
+
+
+  </style>
+</head>
+<body class="bg-nav">
+    <br><br><br><br>
+    <h1>LUNG CANCER DISEASE PREDICTION</h1>
+    <br>
+    <br>
+    <h2>1. Age: The age of the patient in years.</h2><br>
+    <h2>2. Gender: The gender of the patient (1 = male; 0 = female).</h2><br>
+    <h2>3. The "Air Pollution" attribute in a lung cancer dataset refers to the level of air pollution in a particular area where a patient lives or works, and is a feature used in statistical analysis to study the association between air pollution exposure and lung cancer risk.</h2><br>
+    <h2>4. The "Alcohol use" attribute in a lung cancer dataset refers to the history of alcohol consumption by a patient, and is a feature used in statistical analysis to study the association between alcohol use and lung cancer risk.</h2><br>
+    <h2>5. The "Dust Allergy" attribute in a lung cancer dataset refers to whether a patient has a history of allergies to dust, and is a feature used in statistical analysis to study the association between dust allergies and lung cancer risk.</h2><br>
+    <h2>6. The "Genetic Risk" attribute in a lung cancer dataset refers to the presence or absence of specific genetic mutations associated with an increased risk of developing lung cancer, and is a feature used in statistical analysis to study the association between genetic risk factors and lung cancer risk.</h2><br>
+    <h2>7. The "Chronic Lung Disease" attribute in a lung cancer dataset refers to the presence or absence of chronic lung diseases such as Chronic Obstructive Pulmonary Disease (COPD) or emphysema, and is a feature used in statistical analysis to study the association between lung disease and lung cancer risk.</h2><br>
+    <h2>8. There is no "Balanced Diet" attribute in a standard lung cancer dataset as it is not directly relevant to lung cancer risk. However, dietary factors such as fruit and vegetable consumption may be studied as potential risk factors in some lung cancer research studies.</h2><br>
+    <h2>9. The "Obesity" attribute in a lung cancer dataset refers to a patient's body mass index (BMI), and is a feature used in statistical analysis to study the association between obesity and lung cancer risk.</h2><br>
+    <h2>10. The "Smoking" attribute in a lung cancer dataset refers to a patient's history of tobacco smoking, including the number of cigarettes smoked per day and the duration of smoking, and is the most well-established risk factor for lung cancer.</h2><br>
+    <h2>11. The "Chest Pain" attribute is not typically included in a lung cancer dataset as it is not directly related to lung cancer risk. However, chest pain may be a symptom experienced by some lung cancer patients and could be recorded in a patient's medical history.</h2><br>
+    <h2>12. The "Coughing of Blood" attribute in a lung cancer dataset refers to the presence or absence of hemoptysis, which is the coughing up of blood or blood-stained sputum, and is a potential symptom of lung cancer that may be recorded in a patient's medical history.</h2><br>
+    <h2>13. The "Fatigue" attribute in a lung cancer dataset refers to the presence or absence of fatigue or weakness, which is a potential symptom experienced by some lung cancer patients and may be recorded in a patient's medical history. However, it is not a direct risk factor for lung cancer.</h2><br>
+    <h2>14. The "Weight Loss" attribute in a lung cancer dataset refers to the presence or absence of unintentional weight loss, which is a potential symptom experienced by some lung cancer patients and may be recorded in a patient's medical history. However, it is not a direct risk factor for lung cancer.</h2><br>
+    <h2>15. The "Clubbing of Finger Nails" attribute in a lung cancer dataset refers to the presence or absence of digital clubbing, which is a deformity of the fingers or toes associated with some lung diseases including lung cancer, and may be recorded in a patient's physical examination or medical history.</h2><br>
+    <h2>16. The "Frequent Cold" attribute is not typically included in a lung cancer dataset as it is not directly related to lung cancer risk. However, frequent respiratory infections or illnesses may be studied as potential risk factors for lung cancer in some research studies.</h2><br>
+    <h2>17. The "Dry Cough" attribute in a lung cancer dataset refers to the presence or absence of a non-productive cough, which is a potential symptom experienced by some lung cancer patients and may be recorded in a patient's medical history. However, it is not a direct risk factor for lung cancer.</h2><br>
+    <br>
+    <br><br><br><br>
+<div>
+  <form action="/lung_cancer_result" method="POST">
+    <label for="age">Age</label>
+    <input type="text" id="age" name="age">
+
+    <br>
+    <label for="Gender">Gender</label>
+    <select id="Gender" name="Gender">
+      <option value="0">Female</option>
+      <option value="1">Male</option>
+    </select>
+
+    <br>
+    <label for="Air Pollution">Air Pollution</label>
+    <select id="Air Pollution" name="Air Pollution">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+    </select>
+
+    <br>
+    <label for="Alcohol use">Alcohol use</label>
+    <select id="Alcohol use" name="Alcohol use">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+    </select>
+
+    <br>
+    <label for="Dust Allergy">Dust Allergy</label>
+    <select id="Dust Allergy" name="Dust Allergy">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+    </select>
+
+    <br>
+    <label for="Genetic Risk">Genetic Risk</label>
+    <select id="Genetic Risk" name="Genetic Risk">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+    </select>
+
+    <br>
+    <label for="chronic Lung Disease">chronic Lung Disease</label>
+    <select id="chronic Lung Disease" name="chronic Lung Disease">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+    </select>
+
+    <br>
+    <label for="Balanced Diet">Balanced Diet</label>
+    <select id="Balanced Diet" name="Balanced Diet">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+    </select>
+
+    <br>
+    <label for="Obesity">Obesity</label>
+    <select id="Obesity" name="Obesity">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+    </select>
+
+    <br>
+    <label for="Smoking">Smoking</label>
+    <select id="Smoking" name="Smoking">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+    </select>
+
+    <br>
+    <label for="Chest Pain">Chest Pain</label>
+    <select id="Chest Pain" name="Chest Pain">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Coughing of Blood">Coughing of Blood</label>
+    <select id="Coughing of Blood" name="Coughing of Blood">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Fatigue">Fatigue</label>
+    <select id="Fatigue" name="Fatigue">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Weight Loss">Weight Loss</label>
+    <select id="Weight Loss" name="Weight Loss">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Clubbing of Finger Nails">Clubbing of Finger Nails</label>
+    <select id="Clubbing of Finger Nails" name="Clubbing of Finger Nails">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Frequent Cold">Frequent Cold</label>
+    <select id="Frequent Cold" name="Frequent Cold">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+    <br>
+    <label for="Dry Cough">Dry Cough</label>
+    <select id="Dry Cough" name="Dry Cough">
+      <option value="1">one</option>
+      <option value="2">two</option>
+      <option value="3">three</option>
+      <option value="4">four</option>
+      <option value="5">five</option>
+      <option value="6">six</option>
+      <option value="7">seven</option>
+      <option value="8">eight</option>
+      <option value="9">nine</option>
+    </select>
+
+      <br><br><br><br>
+    <div class="buttons">
+    <button class="btn-hover color-1">PREDICT</button>
+      </div>
+  </form>
+</div>
+<br><br><br>
+<h1 style="color:black"> {{ prediction_lung_cancer }}</h1>
+<br><br><br>
+<h1 style="clor:red">NOTE....!</h1>
+<h1>lung cancer prediction models are used for individuals who have a significant history of tobacco smoking, as smoking is the leading cause of lung cancer.</h1><br>
+<h1>These models can be used to inform screening and early detection efforts, as well as to guide prevention and treatment strategies for lung cancer. </h1><br>
+<h1>Lung cancer prediction models can be used to identify individuals who are at high risk for developing lung cancer, based on various risk factors and biomarkers. </h1>
+<br><br><br><br>
+</body>
+</html>

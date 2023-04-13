@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEART DOCTORS INFORMATION</title>
+     <style>
+    h1{
+       text-align: center;
+       color: black;
+       }
+
+
+    label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 28px;
+      width: 800px;
+      text-align: right;
+      color: black;
+
+    }
+
+    input{
+       width: 300px;
+       text-align: right;
+    }
+
+    select {
+        width: 150px;
+        margin: 15px;
+    }
+    select:focus {
+        min-width: 150px;
+        width: auto;
+        text-align: right;
+    }
+
+
+    * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1383445193/photo/shot-of-a-young-male-doctor-using-a-digital-tablet-at-work.jpg?b=1&s=170667a&w=0&k=20&c=WXxPWCe-tmm6bigTeHHbyp5MpnxLyQ1sTvb-Git9nVw=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  </style>
+</head>
+<body>
+<br><br><br>
+<h1>CARDIOLOGISTS DOCTORS</h1>
+<br>
+<h1>Select the location</h1>
+<br>
+<br>
+  <form action="/heart_doctors" method="POST">
+<label for="location">location</label>
+    <select id="location" name="location">
+      <option value="0">CHENNAI</option>
+      <option value="1">COIMBATURE</option>
+      <option value="2">THIRUVANANTHAPURAM</option>
+      <option value="3">KOCHI</option>
+      <option value="4">VIJAYAWADA</option>
+      <option value="5">VISAKHAPATNAM</option>
+      <option value="6">BANGALORE</option>
+    </select>
+ <br>
+<br>
+      <br><br><br><br><br><br><br><br><br>
+      <div class="buttons">
+    <button class="btn-hover color-1">SUBMIT</button>
+      </div>
+  </form>
+
+</body>
+</html>

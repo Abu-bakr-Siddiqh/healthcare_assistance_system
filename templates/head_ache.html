@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HEAD ACHE Medicine Information</title>
+
+     <style>
+        label {
+      padding: 12px 35px 15px 0;
+      display: inline-block;
+      font-size: 32px;
+      width: 680px;
+      text-align: right;
+
+    }
+
+
+
+    .buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 10px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+h1{
+text-align: center;
+}
+
+
+body{
+   background-image: url('https://media.istockphoto.com/id/1398246850/photo/young-caucasian-father-suffering-from-a-headache-while-his-son-runs-in-the-lounge-at-home.jpg?s=612x612&w=0&k=20&c=x61FzKJUHNOD4gcKBg_8ucFT44zHA_jqTw6QwuEK2Cc=');
+   background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+    </style>
+</head>
+   <body>
+      <div>
+          <form action="/head_ache_result" method="POST">
+              <br><br><br><br>
+              <h2 style="text-align:center;">Enter your Age and Check the Medicine Information For Head Ache</h2>
+              <br><br>
+          <label for="Age">Age</label>
+          <input type="text" id="Age" name="Age">
+
+
+
+          <br>
+          <br>
+              <br><br>
+         <div class="buttons">
+        <button class="btn-hover color-1">SUBMIT</button>
+         </div>
+              <br><br>
+
+              <h1 style="color: red;">POINTS TO REMEMBER</h1>
+              <br>
+              <h3>1.Types of headaches: There are different types of headaches, including tension headaches, migraines, cluster headaches, and others. Each type may have different symptoms, triggers, and treatment options.</h3>
+              <h3>2.Triggers: Headaches can be triggered by a variety of factors, including stress, lack of sleep, dehydration, certain foods or drinks, hormonal changes, and environmental factors. Identifying and avoiding triggers can help prevent headaches.</h3>
+              <h3>3.Medications: There are different types of medications that can be used to treat headaches, including over-the-counter pain relievers like acetaminophen and ibuprofen, prescription medications, and alternative therapies like acupuncture. It's important to follow the recommended dosage and avoid overusing medication to prevent rebound headaches.</h3>
+              <h3>4.Lifestyle changes: Making lifestyle changes like getting regular exercise, practicing stress management techniques, staying hydrated, and maintaining a healthy diet can help prevent headaches.</h3>
+              <h3>5.When to seek medical attention: If headaches are severe, persistent, or accompanied by other symptoms like fever, neck stiffness, or vision changes, it's important to seek medical attention to rule out any underlying conditions.</h3>
+<br><br>
+          </form>
+      </div>
+   </body>
+</html>
