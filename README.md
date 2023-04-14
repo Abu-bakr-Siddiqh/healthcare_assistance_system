@@ -4,7 +4,7 @@
 
 >1. This Project is an end to end data science project that is able to predict the chances of getting a disease of Heart, Diabetes, Liver, Lung Cancer, and Breast Cancer etc. 
 
->2. And also gives the doctors information of some cities (chennai, coimbature, thiruvananthapuram, kochi, bangalore, vijayawada, visakhapatnam) related to those diseases (Cardiologist - Heart, Diabetologist - Diabetes, Oncologist - Cancer).
+>2. And also gives the doctors information of some cities (chennai, coimbature, thiruvananthapuram, kochi, bangalore, vijayawada, visakhapatnam) related to those diseases predicted(Cardiologist - Heart, Diabetologist - Diabetes, Oncologist - Cancer).
  
 >3. This Project also gives Medicine Information for fever, cough, stomach ache, head ache, and allergy of different age groups patients. 
 
@@ -52,7 +52,39 @@
 
 >3.Bootstrap
 
+## References
+
+>Images were collected from the websites like
+
+>1.Pixabay
+
+>2.Pixcel
 
 
+
+## Sample Screenshots of project
+
+### Main Page 
+
+![Main_page](https://user-images.githubusercontent.com/82047265/231943572-2a4ab7a3-7a4e-4cf2-b864-0b4664296e06.png)
+
+### Disease Prediction Page
+
+![Disease_prediction](https://user-images.githubusercontent.com/82047265/231943610-2a5a10d7-5b3d-477a-a005-e58fe895cb78.png)
+
+### Medicine Information Page
+
+![Medicine_info](https://user-images.githubusercontent.com/82047265/231943748-79141057-a772-43b3-8c39-5e07bd5c4476.png)
+
+### Doctors Information Page
+
+![Doctors_info](https://user-images.githubusercontent.com/82047265/231943788-4035ac44-f473-467a-88cf-3f6017bd3c85.png)
+
+
+## Any Issues Regarding project Contact us on....
+
+>[LinkedIn](https://www.linkedin.com/in/sayed-siddiqh-b64523217/)
+
+>[Instagram](https://www.instagram.com/abu_bakr_siddiqh/)
 
 
