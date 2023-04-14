@@ -30,6 +30,31 @@
 
 > 5.[diabetes](https://www.kaggle.com/datasets/whenamancodes/predict-diabities)
 
+
+## Machine Learning Algorithms Used
+
+>1.[Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+
+>2.[Decision Tree Classifier](https://scikit-learn.org/stable/modules/tree.html#classification)
+
+>3.[Random Forest Classifier](https://scikit-learn.org/stable/modules/ensemble.html#forests-of-randomized-trees)
+
+>4.[Support Vector Machine](https://scikit-learn.org/stable/modules/svm.html#classification)
+
+>5.[K Nearest Neighbours](https://scikit-learn.org/stable/modules/neighbors.html#nearest-neighbors-classification)
+
+## Programming Language Used 
+
+>1.Python
+
+## IDE Used 
+
+>1.Pycharm
+
+>2.Jupyter Notebook
+
+>3.Google Colab Online IDE 
+
 ## Libraries Used
 
 >1.Numpy.
@@ -40,11 +65,11 @@
 
 >4.Pickle.
 
-## Framework
+## Framework Used
 
 >1.Flask
 
-## Tools 
+## Tools Used
 
 >1.HTML
 
