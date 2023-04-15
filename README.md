@@ -1,4 +1,4 @@
-# healthcare_assistance_system
+# [healthcare_assistance_system](https://health-app-383805.el.r.appspot.com)
 
 ## Outcome of Project
 
@@ -105,6 +105,26 @@
 
 ![Doctors_info](https://user-images.githubusercontent.com/82047265/231943788-4035ac44-f473-467a-88cf-3f6017bd3c85.png)
 
+
+### Steps for Deploying the Project In Google Cloud Platform
+
+>1. keep all the Required files in single folder
+
+>2. Activate the free trail of GCP
+
+>3. Install Google cloud sdk
+
+>4. Create a project name in GCP
+
+>5. Create Instances(N2D Powered by AMD)
+
+>6. Enable all the required services for project in GCP
+
+>7. Go to command Prompt and Deploy the project
+
+### References for Google Cloud Platform  
+ 
+[GCP Documentation](https://cloud.google.com/docs)
 
 ## Any Issues Regarding project Contact us on....
 
